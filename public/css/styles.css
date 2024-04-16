@@ -575,8 +575,16 @@ a {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .mx-4 {
@@ -608,12 +616,28 @@ a {
   height: 32rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
 .w-24 {
   width: 6rem;
 }
 
 .w-8 {
   width: 2rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .flex-1 {
@@ -626,6 +650,10 @@ a {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -648,6 +676,12 @@ a {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .whitespace-nowrap {
@@ -694,9 +728,19 @@ a {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
 .from-gega-red {
   --tw-gradient-from: #BC1A45 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(188 26 69 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-transparent {
+  --tw-gradient-from: transparent var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -704,9 +748,18 @@ a {
   --tw-gradient-to: #DDDDDD var(--tw-gradient-to-position);
 }
 
+.to-black {
+  --tw-gradient-to: #000 var(--tw-gradient-to-position);
+}
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .px-3 {
@@ -737,9 +790,23 @@ a {
   padding-right: 1rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -748,6 +815,10 @@ a {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-gega-grey {
@@ -762,6 +833,11 @@ a {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gega-melon {
+  --tw-text-opacity: 1;
+  color: rgb(255 211 105 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -784,6 +860,10 @@ a {
   transition-duration: 500ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
 .hover\:bg-rose-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(225 29 72 / var(--tw-bg-opacity));
@@ -794,6 +874,11 @@ a {
   color: rgb(255 211 105 / var(--tw-text-opacity));
 }
 
+.hover\:text-gega-red:hover {
+  --tw-text-opacity: 1;
+  color: rgb(188 26 69 / var(--tw-text-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -801,6 +886,18 @@ a {
 
 .group:hover .group-hover\:ml-0 {
   margin-left: 0px;
+}
+
+.group:hover .group-hover\:mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.group:hover .group-hover\:mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.group:hover .group-hover\:mb-20 {
+  margin-bottom: 5rem;
 }
 
 .group:hover .group-hover\:text-gega-red {
